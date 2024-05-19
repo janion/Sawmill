@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="80.099998mm"
+   height="80.099998mm"
+   viewBox="0 0 80.099998 80.099998"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="HeadEndCap.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.1182936"
+     inkscape:cx="140.44323"
+     inkscape:cy="131.94583"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-6.5699131,-6.6948163)">
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round"
+       id="rect2417"
+       width="80"
+       height="80"
+       x="6.6199131"
+       y="6.7448163"
+       rx="10"
+       ry="10" />
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round"
+       id="rect2419"
+       width="72"
+       height="72"
+       x="10.619913"
+       y="10.744816"
+       rx="6"
+       ry="6" />
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round"
+       id="path2421"
+       cx="46.619911"
+       cy="23.494816"
+       r="10.5" />
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round"
+       id="circle2423"
+       cx="46.619911"
+       cy="23.494816"
+       r="17.6" />
+  </g>
+</svg>
