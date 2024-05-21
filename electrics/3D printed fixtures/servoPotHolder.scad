@@ -37,6 +37,9 @@ couplerLength = potShaftLength + couplerWallThickness + servoShaftLength;
 couplerRadius = max(potShaftRadius, servoShaftRadius) + couplerWallThickness;
 
 
+echo(str("Tab hole separations: ", chassisWidth + chassisTabRadius * 2, " x ", chassisLength - 2 * chassisTabRadius, " mm"));
+
+
 //CouplerTest();
 
 //Coupler();

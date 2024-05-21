@@ -13,12 +13,12 @@ bulbFixtuireMountingHoleSeparation = 21.5;
 bulbHeight = 14.0;
 bulbRadius = 11.5 / 2;
 
-ldrDepth = 1.0;
-ldrRadius = 6.0 / 2;
-ldrLegSeparation = 4.0;
+ldrDepth = 2.5;
+ldrRadius = 5.5 / 2;
+ldrLegSeparation = 3.0;
 ldrLegRadius = 0.5 / 2;
 
-bulbLdrSeparation = 4.0;
+bulbLdrSeparation = 3.0;
 
 wallWidthOffset = 5.0;
 
@@ -36,6 +36,11 @@ lidScrewPostRadius = 5.0 / 2;
 
 circuitryPocketDepth = 8.0;
 circuitryPocketWireHoleRadius = 4.0 / 2;
+
+mountingTabRadius = 10.0 / 2;
+mountingTabHoleRadius = 3.3 / 2;
+mountingTabSeparationX = 28.7;
+mountingTabSeparationY = 54.0;
 
 wallThickness = 3.5;
 
@@ -56,7 +61,6 @@ cavityLength = bulbFixtureStemDepth + bulbHeight + ldrDepth + bulbLdrSeparation 
 difference() {
   union() {
     Chassis();
-    CircuitryPocket();
     BulbWall();
     LdrWall();
     Lid();
@@ -216,6 +220,32 @@ module Chassis() {
         cylinder(cavityWidth - lidNotchDepth, lidScrewPostRadius, lidScrewPostRadius, $fn = 25);
         translate([0, 0, cavityWidth - lidScrewLength]) {
           cylinder(lidScrewLength, lidScrewRadius, lidScrewRadius, $fn = 25);
+        }
+      }
+    }
+  }
+  
+  // Circuitry pocket
+  CircuitryPocket();
+  
+  // Tabs
+  difference() {
+    // Tabs web
+    hull() {
+      for (i = [-1, 1]) {
+        for (j = [-1, 1]) {
+          translate([i * mountingTabSeparationX / 2, j * mountingTabSeparationY / 2, 0]) {
+            cylinder(wallThickness, mountingTabRadius, mountingTabRadius, $fn = 50);
+          }
+        }
+      }
+    }
+    
+    // Holes
+    for (i = [-1, 1]) {
+      for (j = [-1, 1]) {
+        translate([i * mountingTabSeparationX / 2, j * mountingTabSeparationY / 2, 0]) {
+          cylinder(wallThickness, mountingTabHoleRadius, mountingTabHoleRadius, $fn = 50);
         }
       }
     }
