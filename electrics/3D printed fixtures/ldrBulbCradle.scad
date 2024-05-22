@@ -3,8 +3,8 @@ bulbFixtureBaseDepth = 5.0;
 bulbFixtureStemRadius = 14.5 / 2;
 bulbFixtureStemDepth = 11.5;
 
-bulbFixtureContactScrewHeadRadius = 6.0 / 2;
-bulbFixtureContactScrewHeadDepth = 4.0 / 2;
+bulbFixtureContactScrewHeadRadius = 6.5 / 2;
+bulbFixtureContactScrewHeadDepth = 4.0;
 bulbFixtureContactScrewHeadSeparation = 21.5;
 
 bulbFixtuireMountingHoleRadius = 2.5 / 2;
@@ -170,7 +170,7 @@ module BulbWall() {
           hull() {
             for (i = [-1, 1]) {
               translate([i * bulbFixtureContactScrewHeadSeparation / 2, 0, 0]) {
-                cylinder(bulbFixtureContactScrewHeadDepth, bulbFixtureContactScrewHeadRadius, bulbFixtureContactScrewHeadRadius, $fn = 50);
+                #cylinder(bulbFixtureContactScrewHeadDepth, bulbFixtureContactScrewHeadRadius, bulbFixtureContactScrewHeadRadius, $fn = 50);
               }
             }
           }
